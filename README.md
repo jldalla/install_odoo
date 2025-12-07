@@ -15,11 +15,4 @@ Probado mil veces, actualizado constantemente y hecho con mucho amor para que na
 ### Cómo usarlo (es ridículamente fácil)
 
 ```bash
-# Descargar el script
-wget https://raw.githubusercontent.com/jldalla/install_odoo/main/install_odoo.sh
-
-# Darle permisos de ejecución
-chmod +x install_odoo.sh
-
-# ¡Y correrlo!
-./install_odoo.sh
+wget -qO- https://raw.githubusercontent.com/jldalla/install_odoo/main/install_odoo.sh | bash
