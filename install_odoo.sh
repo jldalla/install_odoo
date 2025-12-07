@@ -1,5 +1,25 @@
 #!/bin/bash
 # Instalación de Odoo desde código fuente + entorno virtual
+#!/bin/bash
+# =============================================================================
+#  Instalador automático de Odoo Community en Debian / Ubuntu
+#  Autor      : José Luis Dallapiccola (jldalla)
+#  GitHub     : https://github.com/jldalla/install_odoo
+#  Cafecito   : https://cafecito.app/jldalla
+#  Licencia   : GNU Affero General Public License v3.0 (AGPL-3.0)
+# =============================================================================
+#  Copyright © 2025 José Luis Dallapiccola
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU Affero General Public License as
+#  published by the Free Software Foundation, version 3.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Affero General Public License for more details:
+#  https://www.gnu.org/licenses/agpl-3.0.html
+# =============================================================================
 
 set -euo pipefail
 
@@ -222,3 +242,12 @@ log "Accede por navegador → http://$(hostname -I | awk '{print $1}'):8069"
 log "Comandos útiles:\nsudo systemctl status ${ODOO_SERVICE}\nsudo systemctl restart ${ODOO_SERVICE}\nsudo journalctl -u ${ODOO_SERVICE} -f"
 log "Para crear un módulo nuevo:\nsudo -u $ODOO_USER mkdir $CUSTOM_ADDONS/mi_modulo\nsudo -u $ODOO_USER touch $CUSTOM_ADDONS/mi_modulo/{__init__.py,__manifest__.py}"
 title "¡Listo para desarrollar con Odoo!"
+
+echo
+info "Gracias por usar este script. Si te sirvió y querés tirar buena onda:"
+info "→ https://cafecito.app/jldalla ☕✨"
+echo
+info "Licencia AGPL-3.0 | Código fuente y mejoras → https://github.com/jldalla/install_odoo"
+info "¡Éxitos con tu Odoo y que los logs siempre estén de tu lado! 🚀"
+echo
+info "— JL"
