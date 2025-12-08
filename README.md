@@ -1,6 +1,6 @@
 # Odoo en Debian/Ubuntu → Instalación fácil, rápida y sin sufrimiento
 
-Script todo-en-uno para instalar **Odoo Community** (versión 17, 18 o la que elijas) en Debian 12/11 o Ubuntu 24.04/22.04 con un solo comando.  
+Script todo-en-uno para instalar **Odoo Community** (versión 17, 18 o la que elijas) en Debian 13/12 o Ubuntu 24.04/22.04 con un solo comando.  
 Probado mil veces, actualizado constantemente y hecho con mucho amor para que nadie más tenga que pelearse con dependencias a las 4 a.m.
 
 ### Lo que hace este script por vos
